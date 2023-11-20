@@ -257,8 +257,50 @@ body {
 }
 
 .about {
-
+  padding: 0 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 25px;
 } 
+
+.about__column {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.about__logo {
+  padding-top: 1px;
+  background-color: #000;
+  border-radius: 50%;
+  align-content: start;
+  height: 240px;
+  width: 240px;
+}
+
+.about__logo-image {
+  padding: 63px 46px;
+}
+
+.about__title {
+  color: #000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 100px 0px;
+}
+
+.about__text {
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
 .footer {
-  
+
 }
