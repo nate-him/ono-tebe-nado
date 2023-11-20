@@ -103,7 +103,6 @@ justify-self: center;
   font-weight: 700;
   font-size: 100px;
   text-transform: uppercase;
-
 }
 
 .aligned-text {
@@ -233,7 +232,7 @@ justify-self: center;
   font-weight: 700;
   font-size: 22px;
   font-style: normal;
-  line-height: 120%; 
+  line-height: 120%;
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
@@ -264,7 +263,7 @@ justify-self: center;
   justify-items: center;
   gap: 25px;
   padding: 1px 50px;
-} 
+}
 
 .about__column {
   grid-column: 2/4;
@@ -341,7 +340,6 @@ justify-self: center;
   flex-shrink: 0;
   gap: 48px;
   list-style: none;
-  
 }
 
 /* возможно потом понадобится
