@@ -7,7 +7,7 @@
 
 .header__menu {
   color: #000;
-  font-family: 'Raleway', 'Arial', sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
@@ -45,7 +45,7 @@
 .address {
   max-width: 240px;
   color: #000;
-  font-family: 'Raleway', 'Arial', sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 135%;
@@ -68,6 +68,7 @@
 
 .cover {
   position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -81,23 +82,22 @@
 .overlay {
   position: absolute;
   inset: 0;
+  z-index: -1; /* В замечании "можно лучше" предложили сделать "например '-1'" но работает и без отритцательного, поэтому не знаю как правильнее */
   background-color: rgba(0, 0, 0, 0.6);
-  /* z-index: -1; - Если overlay выставить "-1" то он прячется за backgrond и в титульном фоне и карточках*/
 }
 
 .cover__title {
   position: relative;
-  z-index: 1;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 115px 0;
+  margin: 115px 0;
   color: #fff;
-  font-family: 'Raleway', 'Arial', sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 700;
   font-size: 100px;
-  text-transform: uppercase;
   line-height: 100%;
+  text-transform: uppercase;
 }
 
 .aligned-text {
@@ -128,7 +128,6 @@
 
 .cover__description {
   position: relative;
-  z-index: 1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -137,7 +136,7 @@
 
 .cover__description-text {
   color: #fff;
-  font-family: 'Raleway', 'Arial', sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 127.273%;
@@ -150,7 +149,7 @@
   border: 1px solid #fff;
   padding: 12px 32px;
   color: #fff;
-  font-family: 'Raleway', 'Arial', sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 400;
   font-size: 22px;
   text-align: center;
@@ -165,9 +164,9 @@
 }
 
 .lots__heading {
-  padding-left: 40px;
+  margin-left: 40px;
   color: #000;
-  font-family: 'Raleway', 'Arial', sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
@@ -177,8 +176,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  padding-top: 27px;
-  padding-bottom: 30px;
+  margin-top: 27px;
+  margin-bottom: 30px;
   list-style: none;
 }
 
@@ -203,7 +202,7 @@
   height: 100%;
   padding: 50px 40px;
   color: #fff;
-  font-family: 'Raleway', 'Arial', sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -222,7 +221,7 @@
 }
 
 .card__title {
-  z-index: 1;
+  position: relative;
   font-weight: 700;
   font-size: 22px;
   font-style: normal;
@@ -234,7 +233,7 @@
 }
 
 .card__text {
-  z-index: 1;
+  position: relative;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
@@ -243,7 +242,7 @@
 .lots__look-more-link {
   margin-left: 40px;
   color: #000;
-  font-family: 'Raleway', 'Arial', sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   text-decoration-line: underline;
@@ -265,13 +264,13 @@
 
 .about__logo {
   display: flex;
-  align-self: start;
-  border-radius: 50%;
   justify-content: center;
   align-items: center;
-  background-color: #000;
-  height: 240px;
+  align-self: start;
   width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000;
 }
 
 .about__logo-image {
@@ -280,9 +279,9 @@
 }
 
 .about__title {
-  padding: 100px 0px;
+  margin: 100px 0px;
   color: #000;
-  font-family: 'Raleway', 'Arial', sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
@@ -293,7 +292,7 @@
   flex-direction: column;
   gap: 25px;
   color: #000;
-  font-family: 'Raleway', 'Arial', sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
 }
@@ -306,7 +305,7 @@
 
 .footer__menu {
   color: #000;
-  font-family: 'Raleway', 'Arial', sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   text-align: center;
